@@ -1,4 +1,4 @@
-package com.detroitlabs.service;
+package com.detroitlabs;
 
 
 import org.springframework.boot.SpringApplication;

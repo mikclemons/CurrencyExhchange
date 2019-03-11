@@ -19,9 +19,6 @@ public class CurrencyController {
     public String displayCurrencyExchange(){
         CurrencyExchanger currencyExchanger = exchangeService.fetchExchangeRateData();
         CurrencyData currencyData = currencyExchanger.getCurrencyData();
-        double exchangeAmount = currencyData.exchangeUSDollars(100.00);
-        return "The exchange rate in US dollars is " + exchangeAmount;
-
-
+        return "100 US dollars is equvialent to " + String.valueOf(currencyData.getUSDAED() * 100.00) + " in United Arab Emirates Dirham.";
     }
 }
